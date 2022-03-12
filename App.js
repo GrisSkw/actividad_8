@@ -7,9 +7,7 @@ const [datos, setData] = useState([]);
 const [isloading, setloading] = useState([]);
 
     const getPost = async () =>{
-
       try{
-
     const url = "https://jsonplaceholder.typicode.com/posts";
     const response = await fetch(url);
     const json = await response.json();
@@ -39,14 +37,12 @@ const [isloading, setloading] = useState([]);
          )
        }
        />
-
       )}
 
       <StatusBar style="auto" />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
